@@ -1,13 +1,13 @@
-package com.thientdk.base_code_postgresql;
+package com.thientdk.be_tms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BaseCodePostgresqlApplication {
+public class BeTmsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BaseCodePostgresqlApplication.class, args);
+		SpringApplication.run(BeTmsApplication.class, args);
 	}
 
 }

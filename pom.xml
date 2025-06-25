@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.thientdk</groupId>
-	<artifactId>base-code-postgresql</artifactId>
+	<artifactId>be-tms</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>base-code-postgresql</name>
-	<description>base code project for spring boot (postgresql)</description>
+	<name>be-tms</name>
+	<description>expose api form tms project</description>
 	<url/>
 	<licenses>
 		<license/>

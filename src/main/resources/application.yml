@@ -1,10 +1,10 @@
 server:
   port: 8001
   servlet:
-    context-path: /be-expose/api
+    context-path: /be-tms/api
 spring:
   application:
-    name: code-base-postgresql
+    name: be-tms
   rabbitmq:
     host: 103.188.83.162
     port: 5672
@@ -12,9 +12,9 @@ spring:
     password: Qwertyu1@
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://172.0.0.1:5432/base_code
-    username: postgres
-    password: 123456
+    url: jdbc:postgresql://103.188.83.162:5432/tms_be
+    username: thientdk
+    password: Qwertyu1@
     hikari:
       connection-timeout: 60000
       maximum-pool-size: 25
@@ -34,3 +34,20 @@ spring:
         jdbc.batch_size: 1000
         order_inserts: true
         default_schema: public
+grpc:
+  client:
+    user-service:
+      address: static://localhost:6500
+      negotiation-type: plaintext
+    inventory-service:
+      address: static://localhost:6501
+      negotiation-type: plaintext
+    wallet-service:
+      address: static://localhost:6502
+      negotiation-type: plaintext
+    order-service:
+      address: static://localhost:6503
+      negotiation-type: plaintext
+  server:
+    port: 6504
+
